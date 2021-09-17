@@ -12,7 +12,7 @@ body{
   justify-content:space-between;
   background-color: #d3d3d3;
   width: 100%;
-  height: 1900px;
+  height: 2500px;
   flex-direction: column;
 
 }
@@ -25,7 +25,7 @@ body{
   width: 100%;
   margin-top: 25px;
   margin-bottom: 20px;
-  height:1020px;
+  height:1600px;
 }
 
 .main-content{
@@ -33,13 +33,12 @@ body{
   justify-content: center;
   background-repeat: no-repeat;
   flex-direction: column;
-  background-image: url(images/lake_2_black.jpg);
+  background-image: url(images/lake_3.jpg);
   background-attachment: fixed;
-  background-size:contain;
 }
 .header{
   display:flex;
-  color: #d3d3d3;
+  color: #f07470;
   /*background-color: #63c5da; */
   height : 150px;
   width : 100%;
@@ -48,6 +47,8 @@ body{
 }
 .body-content{
   display: flex;
+  height:300px;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -82,20 +83,22 @@ body{
   width: 100%;
   display: flex;
   height: 120px;
-  background-color: #99edc3;
+  background-color: #ea4c46;
   align-items: center;
   align-self: flex-end;
   justify-content: center;
 }
 .footer a{
   font-size: 40px;
-  color: #333;
+  color: #d3d3d3;
   text-decoration: none;
 }
 
-
+/*tablet */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
+  .side-content{
+    flex-direction: row;
+  }
 }
 
 @media only screen and (min-width: 961px) {
