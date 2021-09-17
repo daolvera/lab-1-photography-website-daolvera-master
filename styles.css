@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  font-family: Lucida Console;
+  font-family: 'Courier New', monospace;;
   height: 1500px;
 }
 .page{
@@ -123,15 +123,28 @@ body{
 }
 
 @media only screen and (min-width: 961px) {
+  body{
+    background-color: #333;
+  }
   .page{
-    height:3000px;
+    width: 80%;
+    margin-left: 10%;
+    height:1500px;
+  }
+  .header{
+    font-size: 20px;
   }
   .side-content {
     flex-direction: row;
   }
+  .side-content a{
+    font-size: 18px;
+  }
   .image{
-    height: 1500px;
+    height: 900px;
     background-attachment: fixed;
-    background-size: contain;
+  }
+  .body-content p {
+    font-size: 20px;
   }
 }
