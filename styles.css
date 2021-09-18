@@ -16,6 +16,9 @@ body{
   flex-direction: column;
 
 }
+#portfolio-page{
+  height: 1050px;
+}
 .content{
   display: flex;
 }
@@ -25,7 +28,7 @@ body{
   width: 100%;
   margin-top: 25px;
   margin-bottom: 20px;
-  height:500px;
+  height:700px;
 }
 
 .main-content{
@@ -37,15 +40,71 @@ body{
   background-attachment: fixed;
   background-size: cover;
 }
+.page-content{
+  display: flex;
+  flex-direction: column;
+  background-color: #3d3d3d;
+  height : 200px;
+}
 .header{
   display:flex;
   font-size: 12px;
-  color: #f07470;
+  color: #ea4c46;
   /*background-color: #63c5da; */
   height : 150px;
   width : 100%;
   align-items: center;
   justify-content: center;
+}
+#about{
+  height:100px;
+  margin-bottom: 15px;
+}
+.about-content{
+  display: flex;
+  align-self: flex-start;
+  width = 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 700px;
+}
+.about-image{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.about-image img{
+  width : 300px;
+}
+.about-paragraph{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.about-paragraph p{
+  font-size: 14px;
+}
+.reviews-content{
+  display: flex;
+  align-self: flex-start;
+  height: 800px;
+  flex-direction: column;
+}
+.reviews{
+  display:flex;
+  justify-content:space-around;
+  margin: 20px;
+}
+.review-paragraph{
+  width: 75%;
+  display: flex;
+}
+.review-image{
+  display: flex;
+}
+.review-image img{
+  width:20px;
+  height: 20px;
 }
 .body-content{
   display: flex;
@@ -65,7 +124,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 150px;
+  height: 10px;
 }
 .side-content a{
   text-decoration: none;
@@ -78,8 +137,29 @@ body{
 }
 .nav-item{
   margin: 15px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
+.portfolio {
+  display: flex;
+  align-self: center;
+  width : 80%;
+  margin-left: 20%;
+  margin-right: 10%;
+  flex-direction: column;
+  height: 700px;
+  flex-wrap:wrap;
+  max-height: 1500px;
+}
+
+.portfolio-item {
+  margin: 0px;
+  flex: auto;
+  min-height: 75px;
+}
+.portfolio-item img{
+  width : 120px;
+}
+
 .footer{
   width: 100%;
   display: flex;
@@ -100,6 +180,7 @@ body{
   .side-content {
     display: flex;
     flex-direction: row;
+    height: 50px;
   }
   .header{
     height: 80px;
@@ -120,8 +201,62 @@ body{
   .body-content p {
     font-size: 20px;
   }
-}
+  .about-content{
+    height: 1000px;
+  }
+  .about-image{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .about-image img{
+    width : 500px;
+  }
+  .about-paragraph{
+    padding: 10px;
+  }
+  .about-paragraph p{
+    font-size: 25px;
+  }
+  .reviews-content{
+    height: 1100px;
+  }
+  .reviews{
+    display:flex;
+    justify-content:space-around;
+    margin: 20px;
+  }
+  .review-paragraph{
+    width: 75%;
+    display: flex;
+  }
+  .review-paragraph p{
+    font-size: 25px;
+  }
+  .review-image img{
+    width:50px;
+    height: 50px;
+  }
+  .portfolio {
+    margin-left: 30%;
+    margin-right: 10%;
+    flex-direction: column;
+    height: 700px;
+  }
 
+  .portfolio-item {
+    margin: 0px;
+    flex: auto;
+    min-height: 75px;
+  }
+  .portfolio-item img{
+    width : 150px;
+  }
+  .footer a{
+    font-size: 25px;
+  }
+}
+/* desktop */
 @media only screen and (min-width: 961px) {
   body{
     background-color: #333;
@@ -131,20 +266,95 @@ body{
     margin-left: 10%;
     height:1500px;
   }
+  #portfolio-page{
+    height: 1550px;
+  }
   .header{
     font-size: 20px;
+    height: 80px;
+    padding-top: 30px;
+
   }
   .side-content {
     flex-direction: row;
+    height: 100px;
   }
   .side-content a{
     font-size: 18px;
   }
+  .main-content{
+    background-attachment: fixed;
+    background-image: url(images/lake_3_desk.jpg);
+    background-position: top;
+  }
   .image{
     height: 900px;
-    background-attachment: fixed;
+    width: 100%;
   }
   .body-content p {
     font-size: 20px;
+  }
+  .about-content{
+    flex-direction: row;
+    height: 1000px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .about-image img{
+    width : 500px;
+  }
+  .about-paragraph{
+    padding: 15px;
+  }
+  .about-paragraph p{
+    font-size: 32px;
+  }
+  .reviews-content{
+    height: 1100px;
+  }
+  .reviews{
+    display:flex;
+    justify-content:space-around;
+    margin: 20px;
+  }
+  .review-paragraph{
+    width: 75%;
+    display: flex;
+  }
+  .review-paragraph p{
+    font-size: 35px;
+  }
+  .review-image img{
+    width:70px;
+    height: 70px;
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    width : 80%;
+    margin-left: 13%;
+    margin-right: 7%;
+    flex-direction: column;
+    height: 1000px;
+    flex-wrap:wrap;
+    max-height: 1500px;
+    width: 100%;
+  }
+
+  .portfolio-item img{
+    width : 250px;
+  }
+  .footer{
+    height: 150px;
+  }
+  .footer a{
+    font-size: 30px;
   }
 }
