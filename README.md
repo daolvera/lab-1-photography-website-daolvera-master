@@ -1,4 +1,5 @@
-
+# Photo Website
+Multiple HTML and CSS pages to showcase a photo website
 * A responsive Bootstrap menu that appears on all pages.
 
 * A footer that appears on all pages, which includes the URL to your
